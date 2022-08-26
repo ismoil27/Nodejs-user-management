@@ -20,7 +20,7 @@ router.post("/signup", (req, res) => {
     if (!err) {
       if (result.length <= 0) {
         const query =
-          "insert into user(name, contactNumber, email, password, status, role) values(?,?,?,?, 'false', 'user') ";
+          "insert into user(name, contactNumber, email, password, status, role) values(?,?,?,?, 'false', 'user')";
         connection.query(
           query,
           [
@@ -33,7 +33,7 @@ router.post("/signup", (req, res) => {
           (err, result) => {
             if (!err) {
               return res
-                .status(200)
+                .status(200)+
                 .json({ message: "Successfully registered" });
             } else {
               return res.status(500).json(err);
