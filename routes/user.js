@@ -33,7 +33,7 @@ router.post("/signup", (req, res) => {
           (err, result) => {
             if (!err) {
               return res
-                .status(200)+
+                .status(200)
                 .json({ message: "Successfully registered" });
             } else {
               return res.status(500).json(err);
