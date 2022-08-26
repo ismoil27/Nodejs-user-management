@@ -9,6 +9,10 @@ const checkRole = require("../services/checkRole");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
+router.get("/", (req, res) => {
+  res.send("User management");
+});
+
 router.post("/signup", (req, res) => {
   let user = req.body;
   const query = "select email, password, role, status from user where email=?";
