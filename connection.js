@@ -1,12 +1,15 @@
 const mysql = require("mysql");
+const fs = require("fs");
 require("dotenv").config();
+const contents = fs.readFileSync("./config/db-config.json", "utf8");
+const conf = JSON.parse(contents.toString());
 
 const connection = mysql.createConnection({
-  port: process.env.DB_PORT,
-  host: process.env.DB_HOST,
-  user: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  port: parseInt(conf.port),
+  host: conf.host,
+  user: conf.user,
+  password: conf.password,
+  database: conf.database,
 });
 
 connection.connect((err) => {
