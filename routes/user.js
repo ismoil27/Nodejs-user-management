@@ -9,7 +9,7 @@ const checkRole = require("../services/checkRole");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
-router.get("/", (req, res) => {
+router.get("/getAll", (req, res) => {
   res.send("User management");
 });
 
