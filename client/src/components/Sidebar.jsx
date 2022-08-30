@@ -52,7 +52,7 @@ const Sidebar = () => {
                     }
                   >
                     {link.icon}
-                    <span className="capitalize"> </span>
+                    <span className="capitalize">{link.name} </span>
                   </NavLink>
                 ))}
               </div>
