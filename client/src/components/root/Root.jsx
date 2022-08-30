@@ -1,22 +1,17 @@
 import React from "react";
-import Button from "../Button/Button";
-import Cart from "../Cart/Cart";
-import Header from "../Header/Header";
-import Navbar from "../Navbar/Navbar";
-import Sidebar from "../Sidebar/Sidebar";
-import Footer from "../Footer/Footer";
-import Chat from "../Chat/Chat";
-import Notification from "../Notification/Notification";
-import UserProfile from "../UserProfile/UserProfile";
-import ThemeSettigs from "../Theme/ThemeSettings";
-import SparkLine from "../Charts/SparkLine";
-import LineChart from "../Charts/LineChart";
-import Stacked from "../Charts/Stacked";
-import Pie from "../Charts/Pie";
-import ChartsHeader from "../ChartsHeader/ChartsHeader";
 
-const Root = () => {
-  return <div>Root</div>;
-};
-
-export default Root;
+export { default as Button } from "../Button";
+export { default as Cart } from "../Cart";
+export { default as Header } from "../Header";
+export { default as Navbar } from "../Navbar";
+export { default as Sidebar } from "../Sidebar";
+export { default as Footer } from "../Footer";
+export { default as Chat } from "../Chat";
+export { default as Notification } from "../Notification";
+export { default as UserProfile } from "../UserProfile";
+export { default as ThemeSettigs } from "../ThemeSettings";
+export { default as SparkLine } from "../Charts/SparkLine";
+export { default as LineChart } from "../Charts/LineChart";
+export { default as Stacked } from "../Charts/Stacked";
+export { default as Pie } from "../Charts/Pie";
+export { default as ChartsHeader } from "../ChartsHeader";
