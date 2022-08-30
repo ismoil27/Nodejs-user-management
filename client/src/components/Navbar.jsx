@@ -55,6 +55,28 @@ const Navbar = () => {
           color="blue"
           icon={<BsChatLeft />}
         />
+
+        <NavButton
+          title="Notifications"
+          dotColor="#03C9D7"
+          customFunc={() => handleClick("notification")}
+          color="blue"
+          icon={<RiNotification3Line />}
+        />
+        <TooltipComponent content="Profile" position="ButtomCenter">
+          <div
+            className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
+            onClick={() => handleClick("userProfile")}
+          >
+            <img className="rounded-full w-8 h-8" src={avatar} alt="" />
+            <p>
+              <span className="text-gray-400 text-14">Hi, </span>
+              <span className="text-gray-400 font-bold ml-1 text-14 ">
+                Michael
+              </span>
+            </p>
+          </div>
+        </TooltipComponent>
       </div>
     </div>
   );
