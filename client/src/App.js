@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
-import { Navbar, Sidebar, Footer, ThemeSettings } from "./components/root/Root";
+import { Navbar, Sidebar, Footer, ThemeSettings } from "./components/index";
 // import Sidebar from "./components/Sidebar";
 // import Footer from "./components/Footer";
 // import ThemeSettings from "./components/ThemeSettings";
