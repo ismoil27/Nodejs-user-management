@@ -28,8 +28,10 @@ import {
   Line,
 } from "./pages/index";
 
+import { useStateContext } from "./contexts/ContextProvider";
+
 const App = () => {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
 
   return (
     <div className="">
