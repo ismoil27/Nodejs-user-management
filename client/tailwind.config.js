@@ -39,7 +39,8 @@ module.exports = {
         590: "590px",
       },
       backgroundImage: {
-        "hero-pattern": "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
+        "hero-pattern":
+          "url('https://thumbs.dreamstime.com/b/boy-works-computer-call-center-v-190709978.jpg')",
       },
     },
   },
